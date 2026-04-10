@@ -19,20 +19,23 @@ public class CalculatorApp {
 
         System.out.printf("%n Possible calculations: \n (1) Add \n (2) Subtract \n (3) Multiply \n (4) Divide %n");
         System.out.println("Please select your option: ");
-        input.nextLine();
+        input.nextLine(); //  "eat" the leftover CRLF
         int option = input.nextInt();
 
-        System.out.printf("Preparing to do Math ✨✨✨%n");
+
 
         if (option == 1){
+            System.out.printf("Preparing to do Math ✨✨✨%n");
             System.out.println("Here is your result: " + (num1 + num2));
 
         } else if (option == 2) {
             System.out.println("Here is your result: " + (num1 - num2));
         } else if (option == 3) {
             System.out.println("Here is your result: " + (num1 * num2));
-        } else {
+        } else if (option == 4){
             System.out.printf("Here is your result: %.2f", (num1 / num2));
+        } else {
+            System.out.println("Invalid option. Please select 1-4.");
         }
 
     }
