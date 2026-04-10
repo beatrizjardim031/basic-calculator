@@ -29,10 +29,13 @@ public class CalculatorApp {
             System.out.printf("Here is your result: %.0f", (num1 + num2));
 
         } else if (option == 2) {
+            System.out.printf("Preparing to do Math ✨✨✨%n");
             System.out.printf("Here is your result: %.0f", (num1 - num2));
         } else if (option == 3) {
+            System.out.printf("Preparing to do Math ✨✨✨%n");
             System.out.printf("Here is your result: %.0f", (num1 * num2));
         } else if (option == 4){
+            System.out.printf("Preparing to do Math ✨✨✨%n");
             System.out.printf("Here is your result: %.2f", (num1 / num2));
         } else {
             System.out.println("Invalid option. Please select 1-4.");
