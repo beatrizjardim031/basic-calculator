@@ -26,12 +26,12 @@ public class CalculatorApp {
 
         if (option == 1){
             System.out.printf("Preparing to do Math ✨✨✨%n");
-            System.out.println("Here is your result: " + (num1 + num2));
+            System.out.printf("Here is your result: %.0f", (num1 + num2));
 
         } else if (option == 2) {
-            System.out.println("Here is your result: " + (num1 - num2));
+            System.out.printf("Here is your result: %.0f", (num1 - num2));
         } else if (option == 3) {
-            System.out.println("Here is your result: " + (num1 * num2));
+            System.out.printf("Here is your result: %.0f", (num1 * num2));
         } else if (option == 4){
             System.out.printf("Here is your result: %.2f", (num1 / num2));
         } else {
